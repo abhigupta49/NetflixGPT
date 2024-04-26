@@ -1,11 +1,11 @@
 
-import './index.css';
+import Body from './components/Body';
+
+
 
 function App() {
   return (
-    <div className="App text-3xl text-green-900">
-      Namaste hi
-    </div>
+    <Body />
   );
 }
 

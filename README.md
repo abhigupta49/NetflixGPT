@@ -1,3 +1,10 @@
+# netflix GPT
+- Create React App
+- Configured Tailwind CSS
+- Header 
+- Login Form
+- Sign Up
+
 # Features
 - Login/Signup
 - Browse(After authentication)
@@ -7,7 +14,7 @@
         -Title & Description
         - Movie suggestions
             -Movie Lists segmentation
-- Netflix GPR
+- Netflix GPT
     - Search bar
     - Movie Suggestions
     - test dev
