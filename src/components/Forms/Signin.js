@@ -1,6 +1,7 @@
 import { useRef, useState } from "react"
 import { checkValidateData } from "../../utils/Validate";
-
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../utils/firebase";
 
 const Signin = () =>{
 
@@ -19,8 +20,29 @@ const Signin = () =>{
         const fullNameValue = isSignInForm?'': (fullNameRef.current?.value || '')
         const message = checkValidateData(emailRef.current.value,passwordRef.current.value,fullNameValue.trim(),!isSignInForm)
         setErrorMessage(message)
+        if(message) return;
 
         //Sign In or Sign Up
+        if(!isSignInForm){
+            //Signup Logic
+            createUserWithEmailAndPassword(auth,emailRef.current.value, passwordRef.current.value)
+            .then((userCredential) => {
+                // Signed up 
+                const user = userCredential.user;
+                console.log(user)
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                setErrorMessage(errorCode+ "-"+errorMessage)
+                // ..
+            });
+        }else{
+            //SignIn Logic
+        }
+
+
     }
 
     return(
