@@ -7,6 +7,10 @@
 - Sign Up
 - Form Validation
 - useRefHook
+- Create signu user account
+- Implement sign in user Api
+- Create Redux Store With userSlice
+- 
 
 # Deployment on firebase
 - Install Firebase CLI -   'npm install -g firebase-tools'
