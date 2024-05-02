@@ -10,7 +10,7 @@
 - Create signu user account
 - Implement sign in user Api
 - Create Redux Store With userSlice
-- 
+- Bugfix: Sign up user, Display Name , User login functionality
 
 # Deployment on firebase
 - Install Firebase CLI -   'npm install -g firebase-tools'
