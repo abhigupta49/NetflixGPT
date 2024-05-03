@@ -12,7 +12,16 @@
 - Create Redux Store With userSlice
 - Bugfix: Sign up user, Display Name , User login functionality
 - Unsusbscribeed to the onAuthStateChanged callback
-- Add hardcoded values to the constants files
+- Add hardcoded values to the constants file
+- Register TMDB API & Create an app & get access token
+- get Data from TMDB now playing movies list API
+- custom hooks for now playing movies
+- Create movieSlice
+- update store with movies Data
+- Plannig for maincontainer
+- fetch data for trailer video
+- Embeded to youtube video and make it autoplay and mute
+- Tailwind classes to make container look awsome
 
 # Deployment on firebase
 - Install Firebase CLI -   'npm install -g firebase-tools'

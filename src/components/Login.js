@@ -1,4 +1,4 @@
-import Signin from "./Forms/Signin";
+import Signin from "../Forms/Signin"
 
 import Header from "./Header";
 import { NETFLIX_LOGO } from "../utils/Constatnt";
