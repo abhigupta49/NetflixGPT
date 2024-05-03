@@ -2,7 +2,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector,useDispatch } from "react-redux";
-import { useEffect } from "react";
+import { Component, useEffect } from "react";
 import {onAuthStateChanged } from "firebase/auth";
 
 import {addUser, removeUser} from "../utils/userSlice"
@@ -21,7 +21,7 @@ const Header = () =>{
     }
 
     useEffect(()=>{
-        onAuthStateChanged(auth, (user) => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
               // User is signed in, see docs for a list of available properties
               // https://firebase.google.com/docs/reference/js/auth.user
@@ -34,6 +34,9 @@ const Header = () =>{
                 navigate("/")
             }
         });
+
+        // unsubscribe when Component unmounts
+        return () =>unsubscribe()
     },[])
 
     return(
