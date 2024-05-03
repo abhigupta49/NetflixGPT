@@ -43,7 +43,7 @@ const Signin = () =>{
                     // An error occurred
                     setErrorMessage(error.message)
                 });
-                console.log(user)
+                
                 
                 
             })
@@ -60,7 +60,7 @@ const Signin = () =>{
                 // Signed in 
                 const user = userCredential.user;
                 // ...
-                console.log(user)
+               
                 
             })
             .catch((error) => {
