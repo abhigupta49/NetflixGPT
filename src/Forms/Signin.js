@@ -1,10 +1,10 @@
 import { useRef, useState } from "react"
-import { checkValidateData } from "../../utils/Validate";
+import { checkValidateData } from "../utils/Validate";
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile } from "firebase/auth";
-import { auth } from "../../utils/firebase";
+import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
-import { addUser } from "../../utils/userSlice";
-import { USER_AVATAR } from "../../utils/Constatnt";
+import { addUser } from "../utils/userSlice";
+import { USER_AVATAR } from "../utils/Constatnt";
 const Signin = () =>{
 
     const [isSignInForm,setIsSignInForm] = useState(true);
