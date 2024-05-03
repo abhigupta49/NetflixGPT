@@ -11,6 +11,8 @@
 - Implement sign in user Api
 - Create Redux Store With userSlice
 - Bugfix: Sign up user, Display Name , User login functionality
+- Unsusbscribeed to the onAuthStateChanged callback
+- Add hardcoded values to the constants files
 
 # Deployment on firebase
 - Install Firebase CLI -   'npm install -g firebase-tools'
