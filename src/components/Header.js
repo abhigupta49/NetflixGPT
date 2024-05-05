@@ -57,8 +57,8 @@ const Header = () =>{
 
             {user && (
                 <div className="flex items-center justify-center">
-                    <button className="py-2 px-4 mx-4 m-2 bg-white text-black rounded-sm" onClick={handleGptSearch}>GPT Search</button>
-                    {gptSearchValue && <select className="mx-4 m-2 bg-white text-black rounded-sm" onChange={handleLanguageChange}>
+                    <button className="py-2 px-4 mx-4 m-2 bg-white text-black rounded-sm" onClick={handleGptSearch}>{gptSearchValue?"Homepage" :"GPT Search" }</button>
+                    {gptSearchValue && <select className="mx-4 p-2 m-2 bg-gray-900 text-white rounded-sm" onChange={handleLanguageChange}>
                         <option value="en">English</option>
                         <option value="hindi">Hindi</option>
                         <option value="spanish">Spanish</option>
