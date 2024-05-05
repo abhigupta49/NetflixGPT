@@ -22,6 +22,7 @@
 - fetch data for trailer video
 - Embeded to youtube video and make it autoplay and mute
 - Tailwind classes to make container look awsome
+-  GPT search option
 
 # Deployment on firebase
 - Install Firebase CLI -   'npm install -g firebase-tools'
